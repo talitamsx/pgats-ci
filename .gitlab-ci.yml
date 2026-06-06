@@ -13,10 +13,7 @@ e2e-tests:
 
   # comandos executados antes dos testes
   before_script:
-
-    # instalação do Yarn
-    - npm install -g yarn
-
+  
     # instalação das dependências do projeto
     - yarn install
 
