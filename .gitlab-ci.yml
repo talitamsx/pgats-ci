@@ -8,17 +8,14 @@ e2e-tests:
   # estágio que o job pertence
   stage: test
 
-  # imagem Docker utilizada na execução
-  image: node:24
+  # imagem oficial do Playwright
+  image: mcr.microsoft.com/playwright:v1.47.2-jammy
 
   # comandos executados antes dos testes
   before_script:
-  
+
     # instalação das dependências do projeto
     - yarn install
-
-    # instalação dos browsers do Playwright
-    - yarn playwright install
 
   # comandos principais do job
   script:
