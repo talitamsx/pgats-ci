@@ -9,7 +9,7 @@ e2e-tests:
   stage: test
 
   # imagem oficial do Playwright
-  image: mcr.microsoft.com/playwright:v1.47.2-jammy
+  image: mcr.microsoft.com/playwright:v1.60.0-jammy
 
   # comandos executados antes dos testes
   before_script:
